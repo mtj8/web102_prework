@@ -19,8 +19,11 @@ body {
     margin-top: -10px;
 }
 
-.header p {
+.header ul {
     margin-left: auto;
+    margin-bottom: 0;
+    overflow: hidden;
+    list-style: none;
     font-weight: 700;
     border: 1px solid #758190;
     background: #758190;
@@ -28,8 +31,9 @@ body {
     padding: 12px;
 }
 
-.header p:hover {
-    box-shadow: 0 0 5px lightblue;
+.header li {
+    display: inline;
+    padding: 16px 16px;
 }
 
 .header a,

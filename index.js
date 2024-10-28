@@ -44,7 +44,7 @@ function addGamesToPage(games) {
         // between the end of the src attribute and the end of the tag ("/>")
         newDiv.innerHTML = `
         <img src=${games[i].img} alt="game" width=200 height=144>
-        <p><strong>Title: ${games[i].name}</strong></p> <p>Description: ${games[i].description}</p>
+        <p><strong>${games[i].name}</strong></p> <p>${games[i].description}</p>
         `
 
         // append the game to the games-container
