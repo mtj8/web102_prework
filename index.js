@@ -165,8 +165,8 @@ let unfundedGames = GAMES_JSON.filter((game) => {
 }).length;
 
 // create a string that explains the number of unfunded games using the ternary operator
-const unfundedString = `A total of $${totalRaised.toLocaleString('en-US')} has been raised for ${GAMES_JSON.length}. 
-Currently, ${unfundedGames} ${unfundedGames == 1 ? "game remains" : "games remain"} unfunded.
+const unfundedString = `A total of <strong>$${totalRaised.toLocaleString('en-US')}</strong> has been raised for <strong>${GAMES_JSON.length}</strong> games. 
+Currently, <em>${unfundedGames} ${unfundedGames == 1 ? "game remains" : "games remain"} unfunded.</em>
 We need your help to fund these amazing games!`;
 
 // create a new DOM element containing the template string and append it to the description container
